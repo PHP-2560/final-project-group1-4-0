@@ -5,10 +5,7 @@ A dataframe with all US national universities (public and private) will be creat
 Since US News rankings change at least annually, this package can be utilized to scrape updated university information. Running the package will automatically scrape US News, create a data frame, and output all relevant plots with data frame information.
 Specifically, the sentiment analysis utilizes Twitter (default to a sample of most recent Tweets) to output a value indicating positivity or negativity, a function calculates time to pay off student loans, and visualization functions utilize ggplot to output maps and descriptive data plots. 
 
-In order for this package to work, all required packages listed below must be first installed:
-
-
-[placeholder]
+In order for this package to work, all packages listed in the "DESCRIPTION" file must be first installed. 
 
 Each of us contributed the following:
 Lucas: 
