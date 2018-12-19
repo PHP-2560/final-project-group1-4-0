@@ -30,10 +30,6 @@ navbarPage("UniversityRankings", id="nav",
             tabPanel("Statistical Analysis",
                      theme = shinytheme("cerulean"),
                      
-                     
-                     # Application title
-                     titlePanel("PHP2560/1560 Shiny App"),
-                     
                      # Sidebar layout with a input and output definitions
                      sidebarLayout(
                        
@@ -83,7 +79,7 @@ navbarPage("UniversityRankings", id="nav",
               shiny::tags$script(src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"),
               includeScript('voice.js')
             ))
-  )
+)
 
 
 
