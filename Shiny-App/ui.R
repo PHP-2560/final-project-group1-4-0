@@ -23,23 +23,23 @@ navbarPage("UniversityRankings",
                                      choices = c("Endowment", "Median_Start_Sal", "Acc_Rate", "Score", "Tuition"), 
                                      selected = "Acc_Rate"),
                      
-                     # Select variable for color
-                     selectInput(inputId = "z", 
-                                 label = "Color by:",
-                                 choices = c("School_Type", "Religion"),
-                                 selected = "School_Type"),
+                         # Select variable for color
+                         selectInput(inputId = "z", 
+                                     label = "Color by:",
+                                     choices = c("School_Type", "Religion"),
+                                     selected = "School_Type"),
                      
-                     # Enter text for plot title
-                     textInput(inputId = "plot_title", 
-                               label = "Plot title", 
-                               placeholder = "Enter text to be used as plot title"),
+                         # Enter text for plot title
+                         textInput(inputId = "plot_title", 
+                                   label = "Plot title", 
+                                   placeholder = "Enter text to be used as plot title"),
                      
-                     # Select which types of school
-                     checkboxGroupInput(inputId = "selected_type",
-                                        label = "Select school type:",
-                                        choices = c("Public", "Private", "Proprietary"),
-                                        selected = "Private")
-                   ),
+                         # Select which types of school
+                         checkboxGroupInput(inputId = "selected_type",
+                                            label = "Select school type:",
+                                            choices = c("Public", "Private", "Proprietary"),
+                                            selected = "Private")
+                       ),
                    
                    # Outputs
                    mainPanel(
