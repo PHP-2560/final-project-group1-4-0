@@ -20,4 +20,6 @@ In addition, the X & Y axes in the Statistical Analysis tab can be changed with 
 - "X score"
 - "X tuition"
 
+In order for the Shiny App to run, all packages and data in global.R must be installed.
+
 Our data is scraped from US News University rankings (https://www.usnews.com/best-colleges/rankings/national-universities).
