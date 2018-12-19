@@ -5,6 +5,50 @@ navbarPage("UniversityRankings",
            
            ##### Plots & Statistical Outputs
            # tab for ggplots & statistic outputs
+           tabPanel("Plots & Outputs",
+                    # Sidebar layout with a input and output definitions
+                    sidebarLayout(
+                      
+                      # Inputs
+                      sidebarPanel(
+                        # Select variable for y-axis
+                        selectInput(inputId = "y", 
+                                    label = "Y-axis:",
+                                    choices = c("Endowment", "Median_Start_Sal", "Acc_Rate", "Score", "Tuition"), 
+                                    selected = "Score"),
+                     
+                         # Select variable for x-axis
+                         selectInput(inputId = "x", 
+                                     label = "X-axis:",
+                                     choices = c("Endowment", "Median_Start_Sal", "Acc_Rate", "Score", "Tuition"), 
+                                     selected = "Acc_Rate"),
+                     
+                     # Select variable for color
+                     selectInput(inputId = "z", 
+                                 label = "Color by:",
+                                 choices = c("School_Type", "Religion"),
+                                 selected = "School_Type"),
+                     
+                     # Enter text for plot title
+                     textInput(inputId = "plot_title", 
+                               label = "Plot title", 
+                               placeholder = "Enter text to be used as plot title"),
+                     
+                     # Select which types of school
+                     checkboxGroupInput(inputId = "selected_type",
+                                        label = "Select school type:",
+                                        choices = c("Public", "Private", "Proprietary"),
+                                        selected = "Private")
+                   ),
+                   
+                   # Outputs
+                   mainPanel(
+                     plotOutput(outputId = "scatterplot"),
+                     plotOutput(outputId = "densityplot", height = 200),
+                     verbatimTextOutput(outputId = "lmoutput") # regression output
+                   )
+                 )
+           )
            
           
            ##### Data Explorer
