@@ -10,7 +10,6 @@ library(lattice)
 library(tidyverse)
 library(shinythemes)
 library(tools)
-library(ipeds)
 library(maps)
 library(shinydashboard)
 library(leaflet.extras)
@@ -20,5 +19,4 @@ library(htmltools)
 # load our data frame
 load("sysdata.rda")
 
-# run app
-runApp()
+
