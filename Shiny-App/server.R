@@ -1,4 +1,4 @@
-server <- function(input, output) {
+function(input, output) {
   ##### Data Explorer
   # filter function based on given minimum/maximum scores & school type(s)
   change_df = function(min, max, sch_typ) {
@@ -8,13 +8,12 @@ server <- function(input, output) {
                     is.null(sch_typ) | School_Type %in% sch_typ
       )
   }
-  
-  ##### Statistical Analysis
   # updates data table based on given inputs
   output$df_out = DT::renderDataTable({
     change_df(input$minScore, input$maxScore, input$schools)
   })
   
+  ##### Statistical Analysis
   # Create a subset of data filtering for selected title types
   schools_subset <- reactive({
     req(input$selected_type)
