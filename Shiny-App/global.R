@@ -26,6 +26,8 @@ library(maps)
 load("sysdata.rda")
 
 
+# run the next line to run the shiny app
+# runApp("Shiny-App")
 
  
 
