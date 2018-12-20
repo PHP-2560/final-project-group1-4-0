@@ -1,5 +1,9 @@
 Contributors: Wiilliam Steele, Charles Steele, Lucas de Camillo, Kitty Cheung
 
+YOUTUBE LINK: 
+https://www.youtube.com/watch?v=QKpihNTAFuQ
+
+
 This Shiny App displays data, analysis, and visualizations of US News rankings for US universities, allowing for interactive user input.  
 In addition to the three tabs of the app, some user inputs can be controlled by voice commands. 
 
